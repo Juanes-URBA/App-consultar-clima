@@ -2,18 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimaGlobal</title>
     <link rel="stylesheet" href="style.css">
-    <title>GlobalClima</title>
+    <script type="module" src="scripts/main.js"></script>
 </head>
 <body>
-    <header>
-        <h1>GlobalClima</h1>
-        <input type="text" placeholder="Escribe el pais a consultar...">
-        <button id="buscarpais">Buscar</button>
-    </header>
 
-    <section id="contenedor" class="grid-pais"></section>
-    
+    <div class="container">
+        <h1 class="titulo">Dashboard de Clima</h1>
+
+        <form id="formulario">
+            <input type="text" id="inputCiudad" placeholder="Ingrese una Ciudad">
+            <button type="submit"> Buscar</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
 </body>
 </html>
