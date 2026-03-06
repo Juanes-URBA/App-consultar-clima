@@ -1,8 +1,8 @@
-import { getCoordinates, getWeather } from "./service.js";
+import { getCoordinates, getWeather } from "./services.js";
 import { showWeather, showError } from "./ui.js";
 
-const form = document.getElementById("searchForm");
-const input = document.getElementById("cityInput");
+const form = document.getElementById("formulario");
+const input = document.getElementById("inputCiudad");
 
 form.addEventListener("submit", async (e) => {
     e.preventDefault();

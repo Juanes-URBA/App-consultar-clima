@@ -1,4 +1,3 @@
-
 const resultDiv = document.getElementById("result");
 
 export function showWeather(cityName, weather){
@@ -14,7 +13,7 @@ export function showWeather(cityName, weather){
 
 export function showError(message){
     resultDiv.innerHTML =`
-    <div class="card>
-        <p style="color.red;"><strong>Error:</strong>${message}</p>
+    <div class="card">
+        <p style="color:red;"><strong>Error:</strong> ${message}</p>
     </div>`
 }
